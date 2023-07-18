@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map</title>
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/all.css">
+
+  <!-- Link Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+</head>
+<body>
+  
+  <div class="container">
+    <div class="ip-search">
+      <h1>IP Address Tracker</h1>
+      <div class="search-input-btn">
+        <input type="text" name="ip" placeholder="Search for any IP address or domain">
+        <button><img src="./images/icon-arrow.svg" alt="Search"></button>
+      </div>
+    </div>
+
+    <div class="address-info">
+      <div>
+        <p class="key">IP Address</p>
+        <p class="value ip">192.212.174.101</p>
+      </div>
+      <div class="line-div">
+        <p class="key">Location</p>
+        <p class="value location">Brooklyn,NY 10001</p>
+      </div>
+      <div class="line-div">
+        <p class="key">TimeZone</p>
+        <p class="value timezone">UTC-05:00</p>
+      </div>
+      <div class="line-div">
+        <p class="key">isp</p>
+        <p class="value isp">Spacex Starlink</p>
+      </div>
+    </div>
+
+    <div id="map"></div>
+  </div>
+
+  <!-- Script Map -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- JS File -->
+  <script src="./js/script.js"></script>
+  <script src="./js/all.js"></script>
+</body>
+</html>
